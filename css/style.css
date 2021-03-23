@@ -841,7 +841,7 @@ hr.white {
 .top-slider .slick-dots {
 	position: absolute;
 	bottom: 25px;
-	z-index: 100;
+	z-index: 70;
 }
 .top-slider .slick-dots li {
 	border-color: #fff !important;

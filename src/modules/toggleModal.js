@@ -22,7 +22,11 @@ const toggleModal = () => {
   }
   document.body.addEventListener("click", (event) => {
     const target = event.target;
-    if (target.matches(".callback-btn") || target.matches(".button-services")) {
+    if (
+      target.matches(".callback-btn") ||
+      target.matches(".button-services") ||
+      target.matches(".fancyboxModal")
+    ) {
       if (window.innerWidth > 768) {
         modalOverlay.style.display = "block";
         modalCallback.style.display = "block";

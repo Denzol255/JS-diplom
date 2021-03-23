@@ -2,7 +2,10 @@ const smoothScroll = () => {
   const onMenuLinkClick = (target, e) => {
     if (target.dataset.goto && document.querySelector(target.dataset.goto)) {
       const gotoBlock = document.querySelector(target.dataset.goto),
-        gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset;
+        gotoBlockValue =
+          gotoBlock.getBoundingClientRect().top +
+          pageYOffset -
+          document.querySelector(".header-wrapper").offsetHeight;
 
       window.scrollTo({
         top: gotoBlockValue,
