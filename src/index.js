@@ -6,6 +6,8 @@ import slider from "./modules/slider";
 import servicesCarousel from "./modules/servicesCarousel";
 import accordeon from "./modules/accordeon";
 import smoothScrollToTop from "./modules/smoothScrollToTop";
+import checkValue from "./modules/checkValue";
+import sendForm from "./modules/sendForm";
 
 // Modal
 toggleModal();
@@ -24,3 +26,9 @@ accordeon();
 
 // Smooth scroll to top
 smoothScrollToTop();
+
+// Check value of fields
+checkValue();
+
+// Send form
+sendForm();
